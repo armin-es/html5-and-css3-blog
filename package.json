@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/armin-es/html5-and-css3-blog/issues"
   },
-  "homepage": "https://github.com/armin-es/html5-and-css3-blog#readme"
+  "homepage": "https://github.com/armin-es/html5-and-css3-blog#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-processhtml": "^0.4.1",
+    "normalize.css": "^5.0.0"
+  }
 }
