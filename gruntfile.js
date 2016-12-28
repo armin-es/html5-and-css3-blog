@@ -1,14 +1,18 @@
 module.exports = function(grunt) {
     // Do grunt-related things in here.
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
         // Project configuration
+        pkg: grunt.file.readJSON('package.json'),
+
+        jshint: {
+            files: ['gruntfile.js'],
+        }
     });
 
     // Load the plugins that provides the tasks:
-    grunt.loadNpmTasks(''); // plugin name inside ''
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Default tasks:
-    grunt.registerTask('default', ['']); // task name inside ''
+    grunt.registerTask('default', ['jshint']);
 
 };
