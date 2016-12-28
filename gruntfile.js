@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         concat: {
             css: {
                 src: ['node_modules/normalize.css/normalize.css', 'src/css/style.css'],
-                dest: 'dist/style.css'
+                dest: 'dist/css/style.css'
             }
         },
 
@@ -19,9 +19,9 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'dist',
+                    cwd: 'dist/css',
                     src: '*.css',
-                    dest: 'dist',
+                    dest: 'dist/css',
                     ext: '.min.css'
                 }]
             }
