@@ -33,6 +33,15 @@ module.exports = function(grunt) {
                     'dist/index.html': ['src/index.html']
                 }
             }
+        },
+
+        copy: {
+            main: {
+                expand: true,
+                cwd: 'src/img/',
+                src: '*',
+                dest: 'dist/img/',
+            }
         }
     });
 
@@ -41,9 +50,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+
 
 
     // Default tasks:
-    grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'processhtml']);
+    grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'processhtml', 'copy']);
 
 };
