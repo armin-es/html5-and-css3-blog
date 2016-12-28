@@ -13,14 +13,27 @@ module.exports = function(grunt) {
                 src: ['node_modules/normalize.css/normalize.css', 'src/css/style.css'],
                 dest: 'dist/style.css'
             }
+        },
+
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist',
+                    src: '*.css',
+                    dest: 'dist',
+                    ext: '.min.css'
+                }]
+            }
         }
     });
 
     // Load the plugins that provides the tasks:
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default tasks:
-    grunt.registerTask('default', ['jshint', 'concat']);
+    grunt.registerTask('default', ['jshint', 'concat', 'cssmin']);
 
 };
