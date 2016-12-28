@@ -25,6 +25,14 @@ module.exports = function(grunt) {
                     ext: '.min.css'
                 }]
             }
+        },
+
+        processhtml: {
+            dist: {
+                files: {
+                    'dist/index.html': ['src/index.html']
+                }
+            }
         }
     });
 
@@ -32,8 +40,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-processhtml');
+
 
     // Default tasks:
-    grunt.registerTask('default', ['jshint', 'concat', 'cssmin']);
+    grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'processhtml']);
 
 };
