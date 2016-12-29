@@ -27,6 +27,10 @@ module.exports = function(grunt) {
             }
         },
 
+        clean: {
+            css: ["dist/css/*.css", "!dist/css/*.min.css"]
+        },
+
         processhtml: {
             dist: {
                 files: {
@@ -51,7 +55,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['app/css/*.*'],
-                tasks: ['concat', 'cssmin']
+                tasks: ['concat', 'cssmin', 'clean']
             },
             gruntfile: {
                 files: ['gruntfile.js'],
@@ -69,11 +73,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default tasks:
-    grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'processhtml', 'copy']);
+    grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'clean', 'processhtml', 'copy']);
 
 };
