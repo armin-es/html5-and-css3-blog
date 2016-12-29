@@ -42,6 +42,26 @@ module.exports = function(grunt) {
                 src: '*',
                 dest: 'dist/img/',
             }
+        },
+
+        watch: {
+            html: {
+                files: ['src/index.html'],
+                tasks: ['processhtml']
+            },
+            css: {
+                files: ['app/css/*.*'],
+                tasks: ['concat', 'cssmin']
+            },
+            gruntfile: {
+                files: ['gruntfile.js'],
+                tasks: ['jshint']
+            },
+            img: {
+                files: ['src/img/*'],
+                tasks: ['copy']
+            },
+
         }
     });
 
@@ -51,8 +71,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-copy');
-
-
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default tasks:
     grunt.registerTask('default', ['jshint', 'concat', 'cssmin', 'processhtml', 'copy']);
