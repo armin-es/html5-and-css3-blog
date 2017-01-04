@@ -74,6 +74,12 @@ textarea {
     width: 50%;
 }
 
+.branding img {
+    height: auto;
+    position: absolute;
+    width: 60px;
+}
+
 .branding-heading {
     color: #fff;
     margin: 0 !important;
