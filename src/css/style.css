@@ -56,6 +56,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.main-header {
+    background: #333;
+    height: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+.branding {
+    float: left;
+    width: 50%;
+}
+
+.branding-heading {
+    color: #fff;
+    margin: 0 !important;
+    padding: 5px 0 0 70px;
+}
 
 /* ==========================================================================
    Media Queries
