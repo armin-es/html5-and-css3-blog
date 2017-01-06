@@ -121,6 +121,24 @@ ul {
 .main-nav ul {
     float: right;
 }
+
+.search {
+    float: right;
+}
+
+.search input[type="search"] {
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    float: left;
+    height: 20px;
+    padding: 3px;
+    width: 85%;
+}
+
+.search input[type="image"] {
+    float: right;
+    width: 10%;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
