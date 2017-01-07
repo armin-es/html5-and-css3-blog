@@ -167,6 +167,32 @@ ul {
     color: #f00;
 }
 
+.ad img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+.article-heading {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.article-meta {
+    background: #333;
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.article-meta span {
+    float: right;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
