@@ -145,6 +145,28 @@ ul {
     float: right;
     width: 10%;
 }
+
+.sub-nav {
+    padding: 20px 0;
+}
+
+.sub-nav li {
+    border-bottom: 1px dotted #333;
+    font-size: 16px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.sub-nav a {
+    color: #333;
+}
+
+.sub-nav a:hover,
+.sub-nav a:active {
+    color: #f00;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
