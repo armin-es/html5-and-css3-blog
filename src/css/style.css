@@ -122,10 +122,17 @@ ul {
     float: right;
 }
 
+.content {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    float: left;
+    padding: 0 20px 20px;
+    width: 63%;
+}
+
 .sidebar {
-    float: none;
-    width: 100%;
-    text-align: center;
+    float: right;
+    width: 30%;
 }
 
 .search {
@@ -136,9 +143,9 @@ ul {
     border: #ccc 1px solid;
     border-radius: 5px;
     float: left;
-    height: 20px;
+    height: 28px;
     padding: 3px;
-    width: 85%;
+    width: 88%;
 }
 
 .search input[type="image"] {
