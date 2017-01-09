@@ -176,6 +176,11 @@ h2 {
     font-size: 25px;
 }
 
+article {
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0 20px;
+
+}
 
 .article-heading {
     margin: 0;
@@ -191,6 +196,11 @@ h2 {
 
 .article-meta span {
     float: right;
+}
+
+
+article img {
+    width: 100%;
 }
 
 /* ==========================================================================
