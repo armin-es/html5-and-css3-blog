@@ -203,6 +203,20 @@ article img {
     width: 100%;
 }
 
+.readmore {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 97%;
+}
+
+.readmore:hover {
+    background: #ccc;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
