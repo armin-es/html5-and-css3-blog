@@ -224,6 +224,37 @@ article img {
     background: #ccc;
 }
 
+
+.main-footer {
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    min-height: 180px;
+    overflow: auto;
+}
+
+.main-footer a {
+    color: #fff;
+}
+
+.footer-right {
+    float: right;
+    width: 70%;
+}
+
+.footer-nav {
+    float: left;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 20px 0;
+    width: 31%;
+}
+
+.footer-nav li {
+    border-bottom: 1px dotted #666;
+    padding: 5px 0;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
