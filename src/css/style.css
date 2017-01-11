@@ -268,6 +268,47 @@ article img {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media only screen and (max-width: 900px) {
+    .branding-heading {
+        display: none;
+    }
+
+    .branding {
+        width: 20%;
+    }
+
+    .main-nav {
+        width: 80%;
+    }
+
+    .main-nav li {
+        list-style-type: none;
+        margin: 0 5px;
+    }
+
+    .sidebar {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        float: none;
+        width: 89%;
+    }
+
+    .footer-left,
+    .footer-right {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-nav {
+        float: none;
+        width: 100%;
+    }
+}
 
 
 @media print,
