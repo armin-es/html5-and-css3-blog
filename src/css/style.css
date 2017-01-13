@@ -265,6 +265,53 @@ article img {
 }
 
 
+.comments {
+    margin-top: 20px;
+}
+
+.comment-left {
+    float: left;
+    width: 8%;
+}
+
+.comment-left img {
+    width: 100%;
+}
+
+.comment-right {
+    float: right;
+    width: 90%;
+}
+
+.comment-form {
+    background: #333;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 5px 20px 10px;
+
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px;
+    padding: 3px;
+    width: 97%;
+}
+
+.comment-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    width: 97%;
+}
+
+.comment-form button {
+    color: #333;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
