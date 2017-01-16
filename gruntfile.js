@@ -34,7 +34,11 @@ module.exports = function(grunt) {
         processhtml: {
             dist: {
                 files: {
-                    'dist/index.html': ['src/index.html']
+                    'dist/index.html': ['src/index.html'],
+                    'dist/single_post.html': ['src/single_post.html'],
+                    'dist/add_post.html': ['src/add_post.html']
+
+
                 }
             }
         },
