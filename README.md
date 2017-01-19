@@ -2,7 +2,7 @@
 
 ### Description 
 
-An three-page responsive blog using HTML5 and CSS3.
+A three-page responsive blog using HTML5 and CSS3.
 
 This project is based on the "Projects in HTML5" video course by "Eduonix-Tech" on [Udemy](https://www.udemy.com/projects-in-html5/).
 
